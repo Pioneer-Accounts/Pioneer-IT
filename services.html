@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Image Logo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="bg-gray-100 border-b border-gray-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <a href="#" class="flex items-center">
+                    <img src="./images/pioneerl.png" alt="Logo" class="h-12 w-18">
+                </a>
+                <!-- Toggler (mobile) -->
+                <button class="lg:hidden p-2 rounded-md text-gray-700 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-400" id="menu-button">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <!-- Links -->
+                <div class="hidden lg:flex space-x-4" id="menu">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-500 font-medium">Home</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-500 font-medium">About</a>
+                    <a href="services.html" class="text-gray-700 hover:text-blue-500 font-medium">Services</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-500 font-medium">Team</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-500 font-medium">Contact</a>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="lg:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#" class="block text-gray-700 hover:text-blue-500 font-medium">Home</a>
+                <a href="#" class="block text-gray-700 hover:text-blue-500 font-medium">About</a>
+                <a href="#" class="block text-gray-700 hover:text-blue-500 font-medium">Services</a>
+                <a href="#" class="block text-gray-700 hover:text-blue-500 font-medium">Team</a>
+                <a href="#" class="block text-gray-700 hover:text-blue-500 font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-12">What We Do</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out">
+                    <h3 class="text-xl font-semibold mb-4">Web Development</h3>
+                    <p class="text-gray-600 mb-4">Build modern and scalable websites that enhance user experience and drive business growth.</p>
+                    <a href="web develop.html" class="text-blue-600 hover:text-blue-400">Learn More</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out">
+                    <h3 class="text-xl font-semibold mb-4">Mobile App Development</h3>
+                    <p class="text-gray-600 mb-4">Create intuitive and innovative mobile apps that deliver exceptional performance on all platforms.</p>
+                    <a href="mobile devlop.html" class="text-blue-600 hover:text-blue-400">Learn More</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out">
+                    <h3 class="text-xl font-semibold mb-4">Cloud Solutions</h3>
+                    <p class="text-gray-600 mb-4">Implement secure and scalable cloud services to improve business efficiency and flexibility.</p>
+                    <a href="cloud.html" class="text-blue-600 hover:text-blue-400">Learn More</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out">
+                    <h3 class="text-xl font-semibold mb-4">Cybersecurity</h3>
+                    <p class="text-gray-600 mb-4">Protect your business from cyber threats with our robust security solutions and strategies.</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-400">Learn More</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out">
+                    <h3 class="text-xl font-semibold mb-4">IT Consulting</h3>
+                    <p class="text-gray-600 mb-4">Get expert advice on technology strategy, system integration, and digital transformation.</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-400">Learn More</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out">
+                    <h3 class="text-xl font-semibold mb-4">Digital Marketing</h3>
+                    <p class="text-gray-600 mb-4">Boost your online presence with tailored digital marketing strategies and SEO services.</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-400">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-sky-800 text-white py-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <p>&copy; 2025 IT Company. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="hover:text-gray-400">Privacy Policy</a>
+                <a href="#" class="hover:text-gray-400">Terms of Service</a>
+                <a href="#" class="hover:text-gray-400">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        // Toggle mobile menu visibility
+        const menuButton = document.getElementById('menu-button');
+        const menu = document.getElementById('menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        menuButton.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            mobileMenu.classList.toggle('hidden', !isHidden);
+        });
+    </script>
