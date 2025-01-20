@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Consulting - Our Services</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-sans bg-gray-50">
+  <nav class="bg-gray-100 border-b border-gray-300">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <!-- Logo -->
+            <a href="#" class="flex items-center">
+                <img src="./images/pioneerl.png" alt="Logo" class="h-12 w-18">
+            </a>
+            <!-- Toggler (mobile) -->
+            <button class="lg:hidden p-2 rounded-md text-gray-700 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-400" id="menu-button">
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            <!-- Links -->
+            <div class="hidden lg:flex space-x-4" id="menu">
+                <a href="index.html" class="text-gray-700 hover:text-blue-500 font-medium">Home</a>
+                <a href="about.html" class="text-gray-700 hover:text-blue-500 font-medium">About</a>
+                <a href="services.html" class="text-gray-700 hover:text-blue-500 font-medium">Services</a>
+                <a href="team.html" class="text-gray-700 hover:text-blue-500 font-medium">Team</a>
+                <a href="contact.html" class="text-gray-700 hover:text-blue-500 font-medium">Contact</a>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="lg:hidden hidden" id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+            <a href="index.html" class="block text-gray-700 hover:text-blue-500 font-medium">Home</a>
+            <a href="about.html" class="block text-gray-700 hover:text-blue-500 font-medium">About</a>
+            <a href="services.html" class="block text-gray-700 hover:text-blue-500 font-medium">Services</a>
+            <a href="team.html" class="block text-gray-700 hover:text-blue-500 font-medium">Team</a>
+            <a href="contact.html" class="block text-gray-700 hover:text-blue-500 font-medium">Contact</a>
+        </div>
+    </div>
+</nav>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-900 text-white py-24">
+    <div class="container mx-auto text-center px-6">
+      <h1 class="text-5xl font-bold mb-4">Empowering Your Business with IT Solutions</h1>
+      <p class="text-lg mb-8">We provide cutting-edge IT consulting services to help you drive efficiency and growth.</p>
+      <a href="#services" class="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-lg text-xl font-semibold transition duration-300">Explore Our Services</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16">
+    <div class="container mx-auto text-center px-6">
+      <h2 class="text-4xl font-bold text-gray-800 mb-12">Our IT Consulting Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <!-- Service 1 -->
+        <div class="bg-white shadow-lg rounded-lg p-8">
+          <div class="text-4xl text-blue-500 mb-4">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">IT Strategy & Planning</h3>
+          <p class="text-gray-600">We help you develop a robust IT strategy that aligns with your business goals and supports growth.</p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-white shadow-lg rounded-lg p-8">
+          <div class="text-4xl text-blue-500 mb-4">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Cloud Services</h3>
+          <p class="text-gray-600">Our cloud solutions are designed to scale with your business and provide flexibility in data management.</p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-white shadow-lg rounded-lg p-8">
+          <div class="text-4xl text-blue-500 mb-4">
+            <i class="fas fa-lock"></i>
+          </div>
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Cybersecurity</h3>
+          <p class="text-gray-600">We protect your business from security threats by implementing state-of-the-art security solutions and protocols.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="bg-gray-100 py-16">
+    <div class="container mx-auto text-center px-6">
+      <h2 class="text-4xl font-bold text-gray-800 mb-12">What Our Clients Say</h2>
+      <div class="flex flex-wrap justify-center gap-12">
+        <!-- Testimonial 1 -->
+        <div class="bg-white shadow-lg rounded-lg p-8 max-w-xs">
+          <p class="text-gray-600 mb-4">"Their IT consulting helped us optimize our processes and reduce costs. Highly recommend their services!"</p>
+          <p class="font-semibold text-gray-800">Dr.Bikas Maiti</p>
+          <p class="text-gray-500">CEO, Tech Innovations</p>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="bg-white shadow-lg rounded-lg p-8 max-w-xs">
+          <p class="text-gray-600 mb-4">"The team was exceptional in understanding our business needs and delivering tailored IT solutions." </p>
+          <p class="font-semibold text-gray-800">Hemanta Bhaumik</p>
+          <p class="text-gray-500">Executive, CloudCo</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact" class="py-16">
+    <div class="container mx-auto text-center px-6">
+      <h2 class="text-4xl font-bold text-gray-800 mb-12">Get In Touch</h2>
+      <p class="text-lg text-gray-600 mb-8">Have a question or need a custom IT solution? Reach out to us today, and we'll get back to you!</p>
+      <form class="max-w-lg mx-auto">
+        <div class="mb-6">
+          <input type="text" class="w-full p-4 bg-white border border-gray-300 rounded-lg" placeholder="Your Name" required>
+        </div>
+        <div class="mb-6">
+          <input type="email" class="w-full p-4 bg-white border border-gray-300 rounded-lg" placeholder="Your Email" required>
+        </div>
+        <div class="mb-6">
+          <textarea class="w-full p-4 bg-white border border-gray-300 rounded-lg" placeholder="Your Message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="bg-blue-500 text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-blue-600 transition duration-300">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-blue-900 text-white py-8">
+    <div class="container mx-auto text-center px-6">
+      <p>&copy; 2025 IT Consulting. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <script>
+    // Toggle mobile menu visibility
+    const menuButton = document.getElementById('menu-button');
+    const menu = document.getElementById('menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuButton.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.contains('hidden');
+        mobileMenu.classList.toggle('hidden', !isHidden);
+    });                                               
+  </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot Design</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans flex items-center justify-center h-screen">
+
+  <!-- Chatbot Container -->
+  <div class="w-full max-w-md bg-white rounded-lg shadow-lg p-4">
+
+    <!-- Chat Header -->
+    <div class="flex justify-between items-center border-b pb-3 mb-4">
+      <div class="flex items-center space-x-2">
+        <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+        <span class="text-lg font-semibold text-gray-700">Chatbot</span>
+      </div>
+      <button class="text-gray-500 hover:text-gray-700">X</button>
+    </div>
+
+    <!-- Chat Messages -->
+    <div class="h-64 overflow-y-auto space-y-4 mb-4" id="chat-box">
+      <!-- Example Messages -->
+      <div class="flex items-start space-x-2">
+        <div class="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center">A</div>
+        <div class="bg-gray-100 text-gray-800 p-3 rounded-lg max-w-xs">
+          Hi, how can I help you today?
+        </div>
+      </div>
+      <div class="flex items-start space-x-2 flex-row-reverse">
+        <div class="w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center">B</div>
+        <div class="bg-blue-100 text-blue-800 p-3 rounded-lg max-w-xs">
+          I need some help with my account.
+        </div>
+      </div>
+    </div>
+
+    <!-- Chat Input -->
+    <div class="flex items-center space-x-2">
+      <input type="text" placeholder="Type a message..." class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <button class="bg-blue-500 text-white p-2 rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+          <path d="M2.293 9.293a1 1 0 011.414 0L10 14.586l6.293-6.293a1 1 0 111.414 1.414l-7 7a1 1 0 01-1.414 0l-7-7a1 1 0 010-1.414z" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+</body>
+</html>

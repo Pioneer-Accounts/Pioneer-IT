@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar with Image Logo</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <nav class="bg-gray-100 border-b border-gray-300">
@@ -22,8 +23,8 @@
                 </button>
                 <!-- Links -->
                 <div class="hidden lg:flex space-x-4" id="menu">
-                    <a href="#" class="text-gray-700 hover:text-blue-500 font-medium">Home</a>
-                    <a href="#" class="text-gray-700 hover:text-blue-500 font-medium">About</a>
+                    <a href="index.html" class="text-gray-700 hover:text-blue-500 font-medium">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-blue-500 font-medium">About</a>
                     <a href="services.html" class="text-gray-700 hover:text-blue-500 font-medium">Services</a>
                     <a href="team.html" class="text-gray-700 hover:text-blue-500 font-medium">Team</a>
                     <a href="contact.html" class="text-gray-700 hover:text-blue-500 font-medium">Contact</a>
@@ -34,11 +35,11 @@
         <!-- Mobile Menu -->
         <div class="lg:hidden hidden" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="#" class="block text-gray-700 hover:text-blue-500 font-medium">Home</a>
-                <a href="#" class="block text-gray-700 hover:text-blue-500 font-medium">About</a>
-                <a href="#" class="block text-gray-700 hover:text-blue-500 font-medium">Services</a>
-                <a href="#" class="block text-gray-700 hover:text-blue-500 font-medium">Team</a>
-                <a href="#" class="block text-gray-700 hover:text-blue-500 font-medium">Contact</a>
+                <a href="index.html" class="block text-gray-700 hover:text-blue-500 font-medium">Home</a>
+                <a href="about.html" class="block text-gray-700 hover:text-blue-500 font-medium">About</a>
+                <a href="services.html" class="block text-gray-700 hover:text-blue-500 font-medium">Services</a>
+                <a href="team.html" class="block text-gray-700 hover:text-blue-500 font-medium">Team</a>
+                <a href="contact.html" class="block text-gray-700 hover:text-blue-500 font-medium">Contact</a>
             </div>
         </div>
     </nav>
@@ -88,16 +89,16 @@
       <div class="container mx-auto text-center">
           <h2 class="text-3xl font-bold mb-8">Our Services</h2>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div class="bg-white p-6 rounded-lg shadow-lg">
-                  <h3 class="text-xl font-semibold mb-4">Custom Software Development</h3>
+              <div class="bg-white p-6 rounded-lg shadow-lg" id="SDI">
+                  <h3 class="text-xl text-white font-semibold mb-4">Software Development</h3>
                   <p>We develop custom software tailored to your business needs, ensuring efficiency and scalability.</p>
               </div>
-              <div class="bg-white p-6 rounded-lg shadow-lg">
-                  <h3 class="text-xl font-semibold mb-4">Cloud Solutions</h3>
+              <div class="bg-white p-6 rounded-lg shadow-lg" id="CLOUD">
+                  <h3 class="text-xl text-white font-semibold mb-4">Cloud Solutions</h3>
                   <p>Our cloud services help businesses scale and optimize their infrastructure for maximum performance.</p>
               </div>
-              <div class="bg-white p-6 rounded-lg shadow-lg">
-                  <h3 class="text-xl font-semibold mb-4">Cybersecurity Services</h3>
+              <div class="bg-white p-6 rounded-lg shadow-lg" id="CYBER">
+                  <h3 class="text-xl text-white font-semibold mb-4">Cybersecurity Services</h3>
                   <p>Protect your business from threats with our comprehensive cybersecurity solutions.</p>
               </div>
           </div>
@@ -109,7 +110,7 @@
       <div class="container mx-auto text-center">
           <h2 class="text-3xl font-bold mb-8">About Us</h2>
           <p class="text-lg max-w-2xl mx-auto mb-8">We are a dedicated team of technology experts with a passion for delivering innovative IT solutions. Our mission is to help businesses embrace the power of technology to drive growth and success.</p>
-          <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-500">Learn More</a>
+          <a href="about.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-500">Learn More</a>
       </div>
   </section>
   
@@ -118,7 +119,7 @@
       <div class="container mx-auto">
           <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
           <p class="text-lg mb-8">We'd love to hear from you! Whether you're interested in our services or have a question, reach out to us today.</p>
-          <a href="mailto:contact@itcompany.com" class="bg-yellow-500 text-black px-6 py-3 rounded-lg hover:bg-yellow-400">Email Us</a>
+          <a href="contact.html" class="bg-yellow-500 text-black px-6 py-3 rounded-lg hover:bg-yellow-400">Contact Us</a>
       </div>
   </section>
 

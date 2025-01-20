@@ -1,0 +1,60 @@
+#SDI{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/hsoft.jpg);
+    background-size: cover;
+}
+#SDI p{
+    color: white;
+}
+#CLOUD{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/hcloud.jpg);
+    background-size: cover;
+}
+#CLOUD p{
+    color: white;
+}
+#CYBER{
+    background-image: url(../images/hcyber.jpg);
+    background-size: cover;
+}
+#CYBER p{
+    color: white;
+}
+#mission{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5)),url(../images/amission.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#mission p{
+    color: white;
+}
+#vision{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url(../images/avision.jpg);
+}
+#vision p{
+    color: white;
+}
+#WEB{
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.9)),url(../images/sweb.jpg);
+}
+#APP{
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0.8,0.8)),url(../images/sapp.png);
+    background-size: cover;
+    background-position: center;
+}
+#CLOUD2{
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.9)),url(../images/scloud.jpg);
+    background-size: cover;
+
+}
+#CYBER2{
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.9)),url(../images/scyber.jpg);
+    background-size: cover;
+}
+#IT{
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.9)),url(../images/sit.jpg);
+    background-size: cover;
+}
+#DIGI{
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.9)),url(../images/sdigi.jpg);
+    background-size: cover;
+}
